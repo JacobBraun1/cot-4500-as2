@@ -111,11 +111,11 @@ def question_five():
 
   
     r_mat = np.matrix([[0],[((3/h1)*(y2-y1)) - ((3/h0)*(y1-y0))],[((3/h2)*(y3-y2)) - ((3/h1)*(y2-y1))],[0]])
-    print(np.rot90(r_mat))
+    print(np.ravel(np.rot90(r_mat)))
     print()
 
-    print(np.rot90(solve(A,r_mat)))
-
+    print(np.ravel(np.rot90(solve(A,r_mat))))
+    
 x_points = [3.6,3.8,3.9]
 y_points = [1.675,1.436,1.318]
 approximating_value = 3.7
