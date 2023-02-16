@@ -65,18 +65,9 @@ def question_four():
 
 def question_five():
 
-    x0 = 2
-    x1 = 5
-    x2 = 8
-    x3 = 10
-    y0 = 3
-    y1 = 5
-    y2 = 7
-    y3 = 9
-
-    h0 = x1-x0
-    h1 = x2-x1
-    h2 = x3-x2
+    h0 = 5-2
+    h1 = 8-5
+    h2 = 10-8
 
     r1 = [1,0,0,0]
     r2 = [h0,2*(h0+h1),h1,0]
@@ -87,7 +78,7 @@ def question_five():
     print()
 
   
-    r_mat = np.matrix([[0],[((3/h1)*(y2-y1)) - ((3/h0)*(y1-y0))],[((3/h2)*(y3-y2)) - ((3/h1)*(y2-y1))],[0]])
+    r_mat = np.matrix([[0],[((3/h1)*(7-5)) - ((3/h0)*(5-3))],[((3/h2)*(9-7)) - ((3/h1)*(7-5))],[0]])
     print(np.ravel(np.rot90(r_mat)))
     print()
 
